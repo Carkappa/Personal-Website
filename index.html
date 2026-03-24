@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justin Du | Personal Website</title>
+    <meta name="description" content="Simple personal website for Your Name." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">Justin Du</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <h1>Hi, I am Justin Du.</h1>
+        <p class="intro">
+          I am a Computer Science student at Texas A&amp;M focused on machine learning, computer
+          vision, and full-stack development.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#experience">View Experience</a>
+          <a class="btn btn-secondary" href="resume.html">View Resume</a>
+        </div>
+      </section>
+
+      <section id="about" class="card">
+        <h2>About Me</h2>
+        <p>
+          I build practical software that turns data into clear decisions, from AI-assisted movement
+          analysis to production-ready student applications used on campus.
+        </p>
+      </section>
+
+      <section id="experience">
+        <div class="section-heading">
+          <h2>Experience</h2>
+          <p>Research and industry experience in computer vision and applied AI.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Undergraduate Research Assistant, Texas A&amp;M Hazard Reduction &amp; Recovery Center</h3>
+            <p class="resume-meta">College Station, TX | Aug 2025 - Dec 2025</p>
+            <ul>
+              <li>
+                Developed computer vision models to detect physical disorder indicators in
+                post-hurricane street-level imagery.
+              </li>
+              <li>
+                Trained YOLO11 object detection models on nearly 3,000 images with 5,000+
+                annotations across disorder categories.
+              </li>
+              <li>
+                Built an end-to-end ML pipeline from labeling and annotation to training on NVIDIA
+                A100, reaching 50% mAP.
+              </li>
+            </ul>
+            <a class="detail-link" href="experience-hrc-detail.html">View Detail</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Machine Learning and AI Intern, Crux AI</h3>
+            <p class="resume-meta">College Station, TX | May 2025 - Aug 2025</p>
+            <ul>
+              <li>
+                Designed an end-to-end vision pipeline using YOLOv11 hold detection and YOLOv11n-
+                pose to analyze bouldering movement.
+              </li>
+              <li>
+                Curated and labeled training data in Roboflow and fine-tuned custom models to about
+                99% detection accuracy for holds and pose keypoints.
+              </li>
+              <li>
+                Automated conversion of raw video into structured performance metrics for coaching,
+                trend tracking, and LLM-assisted movement analysis.
+              </li>
+            </ul>
+            <a class="detail-link" href="experience-crux-detail.html">View Detail</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-heading">
+          <h2>Projects</h2>
+          <p>Selected projects from coursework and student organizations.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>EcoTracker</h3>
+            <p>
+              Built a full-stack tracking app with TypeScript and React, used by Texas A&amp;M
+              professors as an instructional tool.
+            </p>
+            <p class="resume-meta">Software Developer | Sep 2025 - Dec 2025</p>
+            <p>Engineered a scalable backend that supports 100+ active users each semester.</p>
+          </article>
+
+          <article class="project-card">
+            <h3>FRC Strategy App</h3>
+            <p>
+              Developed a FIRST Robotics Competition strategy app with Flutter across frontend and
+              backend components.
+            </p>
+            <p class="resume-meta">Software Developer | Aug 2024 - Jan 2025</p>
+            <p>
+              Integrated game and team ID imports, TheBlueAlliance API calls, and real-time match
+              schedules with detailed insights.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Maroon Ride</h3>
+            <p>
+              Collaborated on the Reveille Rides app using React Native and TypeScript to improve
+              rider and routing workflows.
+            </p>
+            <p class="resume-meta">Software Developer | Jan 2024 - May 2024</p>
+            <p>
+              Helped build ETA and route-planning algorithm improvements for an app with 10,000+
+              downloads on the Apple App Store.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>
+          Reach me at <a href="mailto:justindujun@gmail.com">justindujun@gmail.com</a> or connect
+          on <a href="https://github.com/Carkappa" target="_blank" rel="noopener noreferrer">GitHub</a>
+          and
+          <a
+            href="https://www.linkedin.com/in/justin-du-79076121b/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><span id="year"></span> Justin Du</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

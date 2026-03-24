@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justin Du | Resume</title>
+    <meta name="description" content="Resume of Justin Du." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">Justin Du</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="resume.html" aria-current="page">Resume</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="resume-page">
+      <section class="resume-header card">
+        <h1>Resume</h1>
+        <p class="resume-role">Justin Du | Computer Science Student at Texas A&amp;M University</p>
+        <div class="resume-actions">
+          <a class="btn" href="MY%20RESUME%20%283%29.pdf" target="_blank" rel="noopener noreferrer"
+            >Open PDF</a
+          >
+          <a class="btn btn-secondary" href="MY%20RESUME%20%283%29.pdf" download="MY RESUME (3).pdf"
+            >Download PDF</a
+          >
+        </div>
+      </section>
+
+      <section class="resume-section card">
+        <iframe
+          class="resume-frame"
+          src="MY%20RESUME%20%283%29.pdf"
+          title="Resume PDF"
+        ></iframe>
+        <p class="resume-note">
+          If the preview does not load, open it directly here:
+          <a href="MY%20RESUME%20%283%29.pdf" target="_blank" rel="noopener noreferrer"
+            >MY RESUME (3).pdf</a
+          >
+        </p>
+      </section>
+
+      <section class="resume-section card">
+        <h2>Experience</h2>
+
+        <article class="resume-item">
+          <h3>Texas A&amp;M Hazard Reduction &amp; Recovery Center</h3>
+          <p class="resume-meta">
+            Undergraduate Research Assistant - Computer Vision Team | College Station, TX | Aug
+            2025 - Dec 2025
+          </p>
+          <ul>
+            <li>
+              Developed computer vision models to detect physical disorder indicators in
+              post-hurricane street-level imagery.
+            </li>
+            <li>
+              Trained YOLO11 object detection models on nearly 3,000 street-view images with
+              5,000+ annotations across disorder categories.
+            </li>
+            <li>
+              Engineered an end-to-end ML pipeline from labeling and annotation to model training
+              on NVIDIA A100, achieving 50% mAP.
+            </li>
+            <li>
+              Collaborated with cross-functional teams spanning computer science, urban planning,
+              and public health.
+            </li>
+          </ul>
+          <a class="detail-link" href="experience-hrc-detail.html">View Detail</a>
+        </article>
+
+        <article class="resume-item">
+          <h3>Crux AI Startup</h3>
+          <p class="resume-meta">
+            Machine Learning and AI Intern | College Station, TX | May 2025 - Aug 2025
+          </p>
+          <ul>
+            <li>
+              Built an end-to-end computer vision pipeline using YOLOv11 hold detection and
+              YOLOv11n-pose estimation to analyze climbing movement.
+            </li>
+            <li>
+              Curated and labeled a large training dataset in Roboflow and fine-tuned custom models
+              to about 99% detection accuracy for holds and pose keypoints.
+            </li>
+            <li>
+              Automated video analysis into structured performance metrics including hold sequence,
+              movement distance, and joint-angle trajectories.
+            </li>
+            <li>
+              Built data processing and reporting scripts for Excel-based athlete reports and
+              AI-assisted movement analysis.
+            </li>
+          </ul>
+          <a class="detail-link" href="experience-crux-detail.html">View Detail</a>
+        </article>
+      </section>
+
+      <section class="resume-section card">
+        <h2>Projects</h2>
+
+        <article class="resume-item">
+          <h3>EcoTracker</h3>
+          <p class="resume-meta">Software Developer | College Station, TX | Sep 2025 - Dec 2025</p>
+          <ul>
+            <li>
+              Designed a full-stack tracking application using TypeScript and React, currently used
+              by professors at Texas A&amp;M as an instructional tool.
+            </li>
+            <li>Engineered a scalable backend supporting 100+ active users per semester.</li>
+          </ul>
+        </article>
+
+        <article class="resume-item">
+          <h3>FRC Strategy App</h3>
+          <p class="resume-meta">Software Developer | College Station, TX | Aug 2024 - Jan 2025</p>
+          <ul>
+            <li>
+              Developed a FIRST Robotics Competition strategy app with Flutter for frontend and
+              backend.
+            </li>
+            <li>
+              Implemented game and team ID imports, TheBlueAlliance API integration, and real-time
+              match schedule and detail views.
+            </li>
+          </ul>
+        </article>
+
+        <article class="resume-item">
+          <h3>Maroon Ride</h3>
+          <p class="resume-meta">Software Developer | College Station, TX | Jan 2024 - May 2024</p>
+          <ul>
+            <li>
+              Collaborated on Reveille Rides development using React Native and TypeScript alongside
+              the project manager.
+            </li>
+            <li>
+              Contributed to ETA and backend route-planning optimization algorithms, supporting an
+              app with 10,000+ Apple App Store downloads.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="resume-section card">
+        <h2>Contact</h2>
+        <p>
+          justindujun@gmail.com |
+          <a href="https://github.com/Car1kappa" target="_blank" rel="noopener noreferrer"
+            >GitHub</a
+          >
+          |
+          <a
+            href="https://www.linkedin.com/in/justin-du-79076121b/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          | (346) 978-6515
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><span id="year"></span> Justin Du</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
