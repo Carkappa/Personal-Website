@@ -1,69 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Experience Detail | Texas A&M HRRC</title>
-    <meta
-      name="description"
-      content="Detailed experience page for Texas A&M Hazard Reduction and Recovery Center role."
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="index.html">Jun Du (Justin Du)</a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html#about">About</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-    </header>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Undergraduate Research Assistant — HRC | Jun Du</title>
+<meta name="description" content="Undergraduate research at Texas A&M HRC: YOLO11 computer vision models for post-hurricane physical disorder detection."/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface-container": "#ededf9", "surface-container-high": "#e7e7f3",
+        "surface-container-low": "#f3f3fe", "surface-container-lowest": "#ffffff",
+        "surface-dim": "#d9d9e5", "surface": "#faf8ff",
+        "primary": "#004ac6", "primary-container": "#2563eb",
+        "primary-fixed": "#dbe1ff", "on-primary": "#ffffff",
+        "on-primary-container": "#eeefff", "on-surface": "#191b23",
+        "on-surface-variant": "#434655", "outline-variant": "#c3c6d7",
+        "outline": "#737686", "background": "#faf8ff",
+        "inverse-surface": "#2e3038"
+      },
+      borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" },
+      fontFamily: { headline: ["Manrope"], body: ["Inter"], label: ["Inter"] }
+    }
+  }
+}
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+body { font-family: 'Inter', sans-serif; }
+h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+</style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed">
 
-    <main class="detail-page">
-      <section class="card detail-header">
-        <p class="detail-tag">Experience Detail</p>
-        <h1>Texas A&M Hazard Reduction &amp; Recovery Center</h1>
-        <p class="resume-meta">
-          Undergraduate Research Assistant - Computer Vision Team | College Station, TX | Aug 2025
-          - Dec 2025
-        </p>
-        <a class="btn btn-secondary" href="index.html#experience">Back to Experience</a>
-      </section>
+<header class="sticky top-0 z-50 bg-[#faf8ff]/70 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,74,198,0.05)]">
+  <nav class="flex justify-between items-center max-w-[900px] mx-auto px-6 h-16 font-headline antialiased tracking-tight">
+    <a class="text-lg font-extrabold tracking-tighter text-on-surface" href="index.html">Jun Du</a>
+    <div class="flex items-center gap-8">
+      <a class="text-[#5e606e] hover:text-primary transition-colors" href="index.html">Home</a>
+      <a class="text-[#5e606e] hover:text-primary transition-colors" href="resume.html">Resume</a>
+      <a class="text-primary font-bold border-b-2 border-primary pb-1" href="experience-hrc-detail.html">Research</a>
+      <a class="text-[#5e606e] hover:text-primary transition-colors" href="experience-crux-detail.html">Internship</a>
+    </div>
+  </nav>
+</header>
 
-      <section class="card detail-section">
-        <h2>Role Summary</h2>
-        <p>
-          Developed and trained computer vision models to identify physical disorder indicators in
-          post-hurricane street imagery and support data-driven recovery decisions.
-        </p>
-      </section>
+<main class="max-w-[900px] mx-auto px-6 pt-12 pb-24">
 
-      <section class="card detail-section">
-        <h2>Key Work</h2>
-        <ul>
-          <li>Prepared and annotated nearly 3,000 images with 5,000+ labels.</li>
-          <li>Trained YOLO11 models on NVIDIA A100 infrastructure.</li>
-          <li>Implemented end-to-end workflows from data prep to model evaluation.</li>
-          <li>Collaborated with interdisciplinary teams across research domains.</li>
+  <a class="inline-flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors mb-8" href="index.html">
+    <span class="material-symbols-outlined text-base">arrow_back</span>Back to portfolio
+  </a>
+
+  <div class="mb-3">
+    <span class="text-xs font-bold tracking-widest uppercase text-primary bg-surface-container px-3 py-1 rounded-md">Research Experience</span>
+  </div>
+  <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface mb-4">Undergraduate Research Assistant</h1>
+  <div class="flex flex-wrap gap-6 text-on-surface-variant text-sm mb-12">
+    <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">account_balance</span>Texas A&amp;M HRC</span>
+    <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">location_on</span>College Station, TX</span>
+    <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">calendar_today</span>Aug 2025 — Dec 2025</span>
+  </div>
+
+  <!-- Model Architecture Card -->
+  <div class="bg-surface-container-low rounded-xl p-8 border border-outline-variant/30 mb-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="md:col-span-2">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-4">Model Architecture</h2>
+        <p class="text-on-surface leading-relaxed mb-6">YOLO11 object detection trained on street-level post-hurricane imagery to identify physical disorder indicators — debris, structural damage, abandoned property, and blight — across 8 disorder categories.</p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-surface-container-lowest p-4 rounded-xl text-center">
+            <div class="text-3xl font-extrabold text-primary tracking-tighter">80%</div>
+            <div class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mt-1">mAP Score</div>
+          </div>
+          <div class="bg-surface-container-lowest p-4 rounded-xl text-center">
+            <div class="text-3xl font-extrabold text-primary tracking-tighter">~3,000</div>
+            <div class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mt-1">Training Images</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-inverse-surface rounded-xl p-5 font-mono text-xs leading-loose overflow-x-auto text-green-300">
+        <div class="text-on-surface-variant/40 text-[10px] mb-2"># train_config.yaml</div>
+        <div><span class="text-blue-300">model</span><span class="text-white">:</span> yolo11n.pt</div>
+        <div><span class="text-blue-300">epochs</span><span class="text-white">:</span> 100</div>
+        <div><span class="text-blue-300">imgsz</span><span class="text-white">:</span> 640</div>
+        <div><span class="text-blue-300">batch</span><span class="text-white">:</span> 16</div>
+        <div><span class="text-blue-300">device</span><span class="text-white">:</span> 0 (A100)</div>
+        <div><span class="text-blue-300">optimizer</span><span class="text-white">:</span> SGD</div>
+        <div class="mt-2 text-white/40">metrics:</div>
+        <div class="pl-4"><span class="text-yellow-300">map50</span><span class="text-white">:</span> 0.800</div>
+        <div class="pl-4"><span class="text-yellow-300">precision</span><span class="text-white">:</span> 0.485</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar + Main Article grid -->
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-16">
+
+    <!-- Sidebar -->
+    <aside class="md:col-span-3 space-y-8">
+      <div>
+        <h3 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-4">Technologies</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2 py-1 bg-surface-container-high text-[10px] font-bold rounded uppercase tracking-tighter">YOLO11</span>
+          <span class="px-2 py-1 bg-surface-container-high text-[10px] font-bold rounded uppercase tracking-tighter">PYTORCH</span>
+          <span class="px-2 py-1 bg-surface-container-high text-[10px] font-bold rounded uppercase tracking-tighter">NVIDIA A100</span>
+          <span class="px-2 py-1 bg-surface-container-high text-[10px] font-bold rounded uppercase tracking-tighter">OPENCV</span>
+          <span class="px-2 py-1 bg-surface-container-high text-[10px] font-bold rounded uppercase tracking-tighter">WANDB</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-4">Dataset Stats</h3>
+        <ul class="space-y-2 text-sm text-on-surface-variant">
+          <li class="flex justify-between"><span>Images</span><span class="font-semibold text-on-surface">3,142</span></li>
+          <li class="flex justify-between"><span>Annotations</span><span class="font-semibold text-on-surface">5,200+</span></li>
+          <li class="flex justify-between"><span>Classes</span><span class="font-semibold text-on-surface">8 Categories</span></li>
         </ul>
+      </div>
+    </aside>
+
+    <!-- Main article -->
+    <article class="md:col-span-9 space-y-12">
+
+      <!-- Research Objective -->
+      <section>
+        <div class="flex items-center gap-3 mb-6">
+          <span class="material-symbols-outlined text-primary">biotech</span>
+          <h2 class="text-xl font-bold">The Research Objective</h2>
+        </div>
+        <p class="text-on-surface-variant leading-relaxed mb-4">After a hurricane, city planners, public health officials, and emergency responders need to assess physical disorder across large geographic areas. That assessment today is done manually — slow, expensive, and inconsistent.</p>
+        <p class="text-on-surface-variant leading-relaxed">This research trains computer vision models to detect disorder indicators in street-level imagery, creating a scalable alternative to field surveys that can support data-driven recovery decisions.</p>
       </section>
 
-      <section class="card detail-section detail-placeholder">
-        <h2>Add More Details</h2>
-        <p>
-          Add your detailed notes here, such as dataset design, model architecture choices,
-          evaluation metrics, challenges, and impact.
-        </p>
+      <!-- Technical Implementation -->
+      <section>
+        <div class="flex items-center gap-3 mb-6">
+          <span class="material-symbols-outlined text-primary">analytics</span>
+          <h2 class="text-xl font-bold">Technical Implementation</h2>
+        </div>
+        <div class="space-y-4">
+          <div class="flex gap-4 p-5 bg-surface-container-low rounded-xl items-start">
+            <span class="material-symbols-outlined text-primary flex-shrink-0 mt-0.5">memory</span>
+            <div>
+              <h3 class="font-semibold mb-1">Data Pipeline</h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed">Collected, cleaned, and structured street-level imagery. Designed annotation schema and labeling guidelines ensuring consistency across 5,200+ bounding box labels. Conducted iterative quality review to minimize labeling noise.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 p-5 bg-surface-container-low rounded-xl items-start">
+            <span class="material-symbols-outlined text-primary flex-shrink-0 mt-0.5">model_training</span>
+            <div>
+              <h3 class="font-semibold mb-1">Model Training</h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed">Fine-tuned YOLO11 on NVIDIA A100 GPU infrastructure. Built reproducible training pipelines covering preprocessing, augmentation, multi-run experiments, and metric-based evaluation. Tracked with WandB.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 p-5 bg-surface-container-low rounded-xl items-start">
+            <span class="material-symbols-outlined text-primary flex-shrink-0 mt-0.5">groups</span>
+            <div>
+              <h3 class="font-semibold mb-1">Interdisciplinary Collaboration</h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed">Worked across teams in computer science, urban planning, and public health. Cross-domain collaboration shaped which disorder categories mattered most and aligned model outputs to real recovery use cases.</p>
+            </div>
+          </div>
+        </div>
       </section>
-    </main>
 
-    <footer class="site-footer">
-      <p><span id="year"></span> Jun Du (Justin Du)</p>
-    </footer>
+      <!-- Key Outcomes -->
+      <section>
+        <div class="flex items-center gap-3 mb-6">
+          <span class="material-symbols-outlined text-primary">emoji_events</span>
+          <h2 class="text-xl font-bold">Key Outcomes</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="flex gap-3 items-start p-4 bg-surface-container-lowest rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary flex-shrink-0">check_circle</span>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Achieved 80% mAP on NVIDIA A100, establishing a reproducible baseline for iterative improvement.</p>
+          </div>
+          <div class="flex gap-3 items-start p-4 bg-surface-container-lowest rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary flex-shrink-0">check_circle</span>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Labeled ~3,000 images with 5,200+ annotations across 8 disorder categories with consistent quality.</p>
+          </div>
+          <div class="flex gap-3 items-start p-4 bg-surface-container-lowest rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary flex-shrink-0">check_circle</span>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Built end-to-end training pipeline from raw data through evaluation, reproducible for future research iterations.</p>
+          </div>
+          <div class="flex gap-3 items-start p-4 bg-surface-container-lowest rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary flex-shrink-0">check_circle</span>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Contributed ML expertise to interdisciplinary team spanning CS, urban planning, and public health.</p>
+          </div>
+        </div>
+      </section>
 
-    <script src="script.js"></script>
-  </body>
+    </article>
+  </div>
+
+  <!-- Prev/Next -->
+  <div class="flex justify-between items-center pt-8 border-t border-outline-variant/40">
+    <a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="experience-crux-detail.html">
+      <span class="material-symbols-outlined">arrow_back</span>
+      <span class="font-medium text-sm">Crux AI Internship</span>
+    </a>
+    <a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="index.html">
+      <span class="font-medium text-sm">Back to Home</span>
+      <span class="material-symbols-outlined">arrow_forward</span>
+    </a>
+  </div>
+
+</main>
+
+<footer class="w-full bg-[#f3f3fe]">
+  <div class="max-w-[900px] mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-4 font-body text-sm">
+    <div class="text-on-surface-variant">© <span id="year"></span> Jun Du. Built for the Digital Laboratory.</div>
+    <div class="flex gap-6">
+      <a class="text-on-surface-variant hover:text-primary transition-all" href="https://github.com/Carkappa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="text-on-surface-variant hover:text-primary transition-all" href="https://www.linkedin.com/in/justin-du-79076121b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+<script>const y=document.querySelector('#year');if(y)y.textContent=new Date().getFullYear();</script>
+</body>
 </html>

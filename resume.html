@@ -1,178 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jun Du (Justin Du) | Resume</title>
-    <meta name="description" content="Resume of Jun Du (Justin Du)." />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="index.html">Jun Du (Justin Du)</a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html#about">About</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="resume.html" aria-current="page">Resume</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-    </header>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Resume | Jun Du</title>
+<meta name="description" content="Curriculum Vitae of Jun Du (Justin Du), CS student at Texas A&M."/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface-container": "#ededf9", "surface-container-high": "#e7e7f3",
+        "surface-container-low": "#f3f3fe", "surface-container-lowest": "#ffffff",
+        "surface-dim": "#d9d9e5", "surface": "#faf8ff",
+        "primary": "#004ac6", "primary-container": "#2563eb",
+        "primary-fixed": "#dbe1ff", "on-primary": "#ffffff",
+        "on-primary-container": "#eeefff", "on-surface": "#191b23",
+        "on-surface-variant": "#434655", "outline-variant": "#c3c6d7",
+        "outline": "#737686", "background": "#faf8ff"
+      },
+      borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" },
+      fontFamily: { headline: ["Manrope"], body: ["Inter"], label: ["Inter"] }
+    }
+  }
+}
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+body { font-family: 'Inter', sans-serif; }
+h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+</style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed">
 
-    <main class="resume-page">
-      <section class="resume-header card">
-        <h1>Resume</h1>
-        <p class="resume-role">Jun Du (Justin Du) | Computer Science Student at Texas A&amp;M University</p>
-        <div class="resume-actions">
-          <a class="btn" href="MY%20RESUME%20%283%29.pdf" target="_blank" rel="noopener noreferrer"
-            >Open PDF</a
-          >
-          <a class="btn btn-secondary" href="MY%20RESUME%20%283%29.pdf" download="MY RESUME (3).pdf"
-            >Download PDF</a
-          >
+<header class="sticky top-0 z-50 bg-[#faf8ff]/70 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,74,198,0.05)]">
+  <nav class="flex justify-between items-center max-w-[900px] mx-auto px-6 h-16 font-headline antialiased tracking-tight">
+    <a class="text-lg font-extrabold tracking-tighter text-on-surface" href="index.html">Jun Du</a>
+    <div class="flex items-center gap-8">
+      <a class="text-[#5e606e] hover:text-primary transition-colors" href="index.html">Home</a>
+      <a class="text-primary font-bold border-b-2 border-primary pb-1" href="resume.html">Resume</a>
+      <a class="text-[#5e606e] hover:text-primary transition-colors" href="experience-hrc-detail.html">Research</a>
+      <a class="text-[#5e606e] hover:text-primary transition-colors" href="experience-crux-detail.html">Internship</a>
+    </div>
+  </nav>
+</header>
+
+<main class="max-w-[900px] mx-auto px-6 pt-12">
+
+  <!-- Hero -->
+  <section class="mb-16">
+    <h1 class="text-5xl font-extrabold tracking-tight mb-4 text-on-surface">Curriculum Vitae</h1>
+    <p class="text-lg text-on-surface-variant max-w-2xl leading-relaxed">Exploring the intersection of Machine Learning, Computer Vision, and scalable full-stack software architecture.</p>
+  </section>
+
+  <!-- PDF Access -->
+  <section class="mb-20">
+    <div class="bg-surface-container-lowest rounded-full p-8 shadow-[0_20px_40px_rgba(0,74,198,0.05)] flex flex-col md:flex-row items-center justify-between gap-6 hover:scale-[1.01] transition-all">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center text-white">
+          <span class="material-symbols-outlined">picture_as_pdf</span>
         </div>
-      </section>
+        <div>
+          <h3 class="font-bold text-lg">MY RESUME (4).pdf</h3>
+          <p class="text-sm text-on-surface-variant">Jun Du (Justin Du) — Computer Science, Texas A&amp;M</p>
+        </div>
+      </div>
+      <div class="flex gap-3 flex-wrap">
+        <a class="px-6 py-3 bg-primary-container text-on-primary-container rounded-full font-semibold flex items-center gap-2 hover:opacity-90 transition-all active:scale-95" href="MY%20RESUME%20%284%29.pdf" download="MY RESUME (4).pdf">
+          <span class="material-symbols-outlined text-sm">download</span>Download PDF
+        </a>
+        <a class="px-6 py-3 bg-surface-container text-on-surface rounded-full font-semibold flex items-center gap-2 hover:bg-surface-container-high transition-all" href="MY%20RESUME%20%284%29.pdf" target="_blank" rel="noopener noreferrer">
+          <span class="material-symbols-outlined text-sm">visibility</span>Preview
+        </a>
+      </div>
+    </div>
+  </section>
 
-      <section class="resume-section card">
-        <iframe
-          class="resume-frame"
-          src="MY%20RESUME%20%283%29.pdf"
-          title="Resume PDF"
-        ></iframe>
-        <p class="resume-note">
-          If the preview does not load, open it directly here:
-          <a href="MY%20RESUME%20%283%29.pdf" target="_blank" rel="noopener noreferrer"
-            >MY RESUME (3).pdf</a
-          >
-        </p>
-      </section>
+  <!-- Education -->
+  <section class="mb-16">
+    <div class="flex items-center gap-3 mb-8">
+      <span class="material-symbols-outlined text-primary">school</span>
+      <h2 class="text-sm font-bold uppercase tracking-widest text-on-surface-variant">Education</h2>
+    </div>
+    <div class="bg-surface-container-low p-8 rounded-xl">
+      <div class="flex flex-col md:flex-row justify-between items-start mb-2 gap-2">
+        <h3 class="text-xl font-bold">Texas A&amp;M University</h3>
+        <span class="text-primary font-medium">Expected May 2027</span>
+      </div>
+      <p class="text-on-surface-variant">B.S. in Computer Science</p>
+      <p class="text-on-surface-variant text-sm mt-1">College Station, TX</p>
+      <p class="text-on-surface-variant text-sm mt-1">GPA: 3.370</p>
+      <p class="text-on-surface-variant text-sm mt-1">Texas Leadership Scholar • Houston Livestock Show and Rodeo Scholarship • Regent Scholar</p>
+    </div>
+  </section>
 
-      <section class="resume-section card">
-        <h2>Experience</h2>
+  <!-- Professional Experience -->
+  <section class="mb-16">
+    <div class="flex items-center gap-3 mb-8">
+      <span class="material-symbols-outlined text-primary">work</span>
+      <h2 class="text-sm font-bold uppercase tracking-widest text-on-surface-variant">Professional Experience</h2>
+    </div>
+    <div class="space-y-6">
+      <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm group">
+        <div class="flex flex-col md:flex-row justify-between items-start mb-4 gap-2">
+          <div>
+            <h3 class="text-xl font-bold group-hover:text-primary transition-colors">Undergraduate Research Assistant</h3>
+            <p class="text-on-surface-variant font-medium">Texas A&amp;M Hazard Reduction &amp; Recovery Center</p>
+          </div>
+          <span class="text-on-surface-variant text-sm bg-surface-container px-3 py-1 rounded-full whitespace-nowrap">Aug 2025 – Dec 2025</span>
+        </div>
+        <ul class="space-y-3 text-on-surface-variant leading-relaxed text-sm">
+          <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>Developed computer vision models to detect physical disorder indicators in post-hurricane street-level imagery.</li>
+          <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>Trained YOLO11 on nearly 3,000 images with 5,000+ annotations, achieving 80% mAP on NVIDIA A100.</li>
+          <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>Built an end-to-end ML pipeline from labeling and annotation to model training.</li>
+          <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>Collaborated with teams across computer science, urban planning, and public health.</li>
+        </ul>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="px-2 py-1 bg-surface-container-high text-[10px] font-bold rounded uppercase tracking-tighter">YOLO11</span>
+          <span class="px-2 py-1 bg-surface-container-high text-[10px] font-bold rounded uppercase tracking-tighter">PyTorch</span>
+          <span class="px-2 py-1 bg-surface-container-high text-[10px] font-bold rounded uppercase tracking-tighter">NVIDIA A100</span>
+          <span class="px-2 py-1 bg-surface-container-high text-[10px] font-bold rounded uppercase tracking-tighter">OpenCV</span>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm group">
+        <div class="flex flex-col md:flex-row justify-between items-start mb-4 gap-2">
+          <div>
+            <h3 class="text-xl font-bold group-hover:text-primary transition-colors">Machine Learning and AI Intern</h3>
+            <p class="text-on-surface-variant font-medium">Crux AI</p>
+          </div>
+          <span class="text-on-surface-variant text-sm bg-surface-container px-3 py-1 rounded-full whitespace-nowrap">May 2025 – Aug 2025</span>
+        </div>
+        <ul class="space-y-3 text-on-surface-variant leading-relaxed text-sm">
+          <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>Built an end-to-end vision pipeline using YOLOv11 hold detection and YOLOv11n-pose to analyze climbing movement.</li>
+          <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>Curated and labeled training data in Roboflow; fine-tuned models to ~99% detection accuracy.</li>
+          <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>Automated video analysis into structured performance metrics: hold sequence, movement distance, joint-angle trajectories.</li>
+          <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>Built reporting scripts for Excel-based athlete reports and LLM-assisted movement analysis.</li>
+          <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>Reduced coach review friction by packaging detections, pose traces, and narrative summaries into a repeatable post-session workflow.</li>
+        </ul>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="px-2 py-1 bg-surface-container-high text-[10px] font-bold rounded uppercase tracking-tighter">PyTorch</span>
+          <span class="px-2 py-1 bg-surface-container-high text-[10px] font-bold rounded uppercase tracking-tighter">YOLOv11</span>
+          <span class="px-2 py-1 bg-surface-container-high text-[10px] font-bold rounded uppercase tracking-tighter">Roboflow</span>
+          <span class="px-2 py-1 bg-surface-container-high text-[10px] font-bold rounded uppercase tracking-tighter">OpenCV</span>
+          <span class="px-2 py-1 bg-surface-container-high text-[10px] font-bold rounded uppercase tracking-tighter">LangChain</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <article class="resume-item">
-          <h3>Texas A&amp;M Hazard Reduction &amp; Recovery Center</h3>
-          <p class="resume-meta">
-            Undergraduate Research Assistant - Computer Vision Team | College Station, TX | Aug
-            2025 - Dec 2025
-          </p>
-          <ul>
-            <li>
-              Developed computer vision models to detect physical disorder indicators in
-              post-hurricane street-level imagery.
-            </li>
-            <li>
-              Trained YOLO11 object detection models on nearly 3,000 street-view images with
-              5,000+ annotations across disorder categories.
-            </li>
-            <li>
-              Engineered an end-to-end ML pipeline from labeling and annotation to model training
-              on NVIDIA A100, achieving 50% mAP.
-            </li>
-            <li>
-              Collaborated with cross-functional teams spanning computer science, urban planning,
-              and public health.
-            </li>
-          </ul>
-          <a class="detail-link" href="experience-hrc-detail.html">View Detail</a>
-        </article>
+  <!-- Projects -->
+  <section class="mb-16">
+    <div class="flex items-center gap-3 mb-8">
+      <span class="material-symbols-outlined text-primary">terminal</span>
+      <h2 class="text-sm font-bold uppercase tracking-widest text-on-surface-variant">Featured Projects</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-surface-container-low p-8 rounded-xl relative overflow-hidden group">
+        <h3 class="text-xl font-bold mb-2">EcoTracker</h3>
+        <p class="text-on-surface-variant text-sm mb-4">Full-stack TypeScript/React app used by Texas A&amp;M professors; 100+ active users per semester.</p>
+        <div class="flex gap-2 mb-2 flex-wrap">
+          <span class="text-[10px] font-bold text-primary tracking-widest uppercase">React</span>
+          <span class="text-[10px] font-bold text-primary tracking-widest uppercase">TypeScript</span>
+          <span class="text-[10px] font-bold text-primary tracking-widest uppercase">Node.js</span>
+        </div>
+        <p class="text-xs text-on-surface-variant/60 font-label">Sep 2025 – Dec 2025</p>
+        <span class="material-symbols-outlined absolute -bottom-4 -right-4 text-9xl text-surface-container opacity-20 group-hover:scale-110 transition-transform">eco</span>
+      </div>
+      <div class="bg-surface-container-low p-8 rounded-xl relative overflow-hidden group">
+        <h3 class="text-xl font-bold mb-2">FRC Strategy App</h3>
+        <p class="text-on-surface-variant text-sm mb-4">Flutter app for FIRST Robotics teams with TheBlueAlliance API, imports, and real-time match schedules.</p>
+        <div class="flex gap-2 mb-2 flex-wrap">
+          <span class="text-[10px] font-bold text-primary tracking-widest uppercase">Flutter</span>
+          <span class="text-[10px] font-bold text-primary tracking-widest uppercase">Dart</span>
+        </div>
+        <p class="text-xs text-on-surface-variant/60 font-label">Aug 2024 – Jan 2025</p>
+        <span class="material-symbols-outlined absolute -bottom-4 -right-4 text-9xl text-surface-container opacity-20 group-hover:scale-110 transition-transform">precision_manufacturing</span>
+      </div>
+      <div class="md:col-span-2 bg-primary p-8 rounded-xl flex flex-col md:flex-row justify-between items-center gap-6 relative overflow-hidden">
+        <div class="z-10">
+          <h3 class="text-2xl font-bold mb-2 text-on-primary">Maroon Ride</h3>
+          <p class="text-on-primary/80 max-w-md mb-4 text-sm">React Native/TypeScript contributions to Reveille Rides — ETA and route-planning optimizations for an app with 10,000+ Apple App Store downloads.</p>
+          <div class="flex gap-3 flex-wrap">
+            <span class="px-3 py-1 bg-white/20 rounded-md text-[10px] font-bold tracking-widest uppercase text-on-primary">React Native</span>
+            <span class="px-3 py-1 bg-white/20 rounded-md text-[10px] font-bold tracking-widest uppercase text-on-primary">TypeScript</span>
+          </div>
+          <p class="mt-2 text-on-primary/50 text-xs font-label">Jan 2024 – May 2024</p>
+        </div>
+        <div class="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 80% 20%, white 0%, transparent 40%);"></div>
+      </div>
+    </div>
+  </section>
 
-        <article class="resume-item">
-          <h3>Crux AI Startup</h3>
-          <p class="resume-meta">
-            Machine Learning and AI Intern | College Station, TX | May 2025 - Aug 2025
-          </p>
-          <ul>
-            <li>
-              Built an end-to-end computer vision pipeline using YOLOv11 hold detection and
-              YOLOv11n-pose estimation to analyze climbing movement.
-            </li>
-            <li>
-              Curated and labeled a large training dataset in Roboflow and fine-tuned custom models
-              to about 99% detection accuracy for holds and pose keypoints.
-            </li>
-            <li>
-              Automated video analysis into structured performance metrics including hold sequence,
-              movement distance, and joint-angle trajectories.
-            </li>
-            <li>
-              Built data processing and reporting scripts for Excel-based athlete reports and
-              AI-assisted movement analysis.
-            </li>
-          </ul>
-          <a class="detail-link" href="experience-crux-detail.html">View Detail</a>
-        </article>
-      </section>
+</main>
 
-      <section class="resume-section card">
-        <h2>Projects</h2>
-
-        <article class="resume-item">
-          <h3>EcoTracker</h3>
-          <p class="resume-meta">Software Developer | College Station, TX | Sep 2025 - Dec 2025</p>
-          <ul>
-            <li>
-              Designed a full-stack tracking application using TypeScript and React, currently used
-              by professors at Texas A&amp;M as an instructional tool.
-            </li>
-            <li>Engineered a scalable backend supporting 100+ active users per semester.</li>
-          </ul>
-        </article>
-
-        <article class="resume-item">
-          <h3>FRC Strategy App</h3>
-          <p class="resume-meta">Software Developer | College Station, TX | Aug 2024 - Jan 2025</p>
-          <ul>
-            <li>
-              Developed a FIRST Robotics Competition strategy app with Flutter for frontend and
-              backend.
-            </li>
-            <li>
-              Implemented game and team ID imports, TheBlueAlliance API integration, and real-time
-              match schedule and detail views.
-            </li>
-          </ul>
-        </article>
-
-        <article class="resume-item">
-          <h3>Maroon Ride</h3>
-          <p class="resume-meta">Software Developer | College Station, TX | Jan 2024 - May 2024</p>
-          <ul>
-            <li>
-              Collaborated on Reveille Rides development using React Native and TypeScript alongside
-              the project manager.
-            </li>
-            <li>
-              Contributed to ETA and backend route-planning optimization algorithms, supporting an
-              app with 10,000+ Apple App Store downloads.
-            </li>
-          </ul>
-        </article>
-      </section>
-
-      <section class="resume-section card">
-        <h2>Contact</h2>
-        <p>
-          justindujun@gmail.com |
-          <a href="https://github.com/Car1kappa" target="_blank" rel="noopener noreferrer"
-            >GitHub</a
-          >
-          |
-          <a
-            href="https://www.linkedin.com/in/justin-du-79076121b/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-          | <a href="tel:+13469786515">3469786515</a>
-        </p>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p><span id="year"></span> Jun Du (Justin Du)</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+<footer class="w-full mt-20 bg-[#f3f3fe]">
+  <div class="max-w-[900px] mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-4 font-body text-sm">
+    <div class="text-on-surface-variant">© <span id="year"></span> Jun Du. Built for the Digital Laboratory.</div>
+    <div class="flex gap-6">
+      <a class="text-on-surface-variant hover:text-primary transition-all" href="https://github.com/Carkappa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="text-on-surface-variant hover:text-primary transition-all" href="https://www.linkedin.com/in/justin-du-79076121b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+<script>const y=document.querySelector('#year');if(y)y.textContent=new Date().getFullYear();</script>
+</body>
 </html>

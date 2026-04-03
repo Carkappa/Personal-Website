@@ -1,242 +1,262 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Experience Detail | BoulderingAI</title>
-    <meta
-      name="description"
-      content="How I Built an AI-Powered Climbing Video Analysis Platform: From YOLO Detection to Coaching Insights"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      .detail-image {
-        width: 100%;
-        max-width: 700px;
-        margin: 2em auto;
-        border-radius: 8px;
-        border: 1px solid #444;
-        display: block;
-      }
-      .image-caption {
-        text-align: center;
-        font-size: 0.9em;
-        color: #aaa;
-        margin-top: 0.5em;
-        font-style: italic;
-      }
-      .metrics-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.5em;
-        margin: 2em 0;
-      }
-      .metric-card {
-        background: rgba(255,255,255,0.05);
-        padding: 1.5em;
-        border-radius: 8px;
-        border-left: 3px solid #0ea5e9;
-      }
-      .metric-card h4 {
-        margin: 0 0 0.5em 0;
-        color: #0ea5e9;
-      }
-      .metric-card p {
-        margin: 0;
-        font-size: 0.95em;
-        line-height: 1.5;
-      }
-      .pipeline-diagram {
-        background: rgba(255,255,255,0.03);
-        border: 1px solid #444;
-        border-radius: 8px;
-        padding: 2em;
-        margin: 2em 0;
-        font-family: 'Courier New', monospace;
-        font-size: 0.9em;
-        line-height: 1.8;
-        overflow-x: auto;
-      }
-      .code-block {
-        background: rgba(0,0,0,0.4);
-        border-left: 3px solid #10b981;
-        padding: 1em;
-        border-radius: 4px;
-        margin: 1em 0;
-        font-family: 'Courier New', monospace;
-        font-size: 0.9em;
-        overflow-x: auto;
-      }
-      .highlight {
-        color: #0ea5e9;
-        font-weight: bold;
-      }
-    </style>
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="index.html">Jun Du (Justin Du)</a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html#about">About</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-    </header>
+﻿<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ML &amp; AI Intern — Crux AI | Jun Du</title>
+<meta name="description" content="Case study: ML &amp; AI Intern at Crux AI — bouldering vision pipeline, YOLO, pose estimation."/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface-container": "#ededf9", "surface-container-high": "#e7e7f3",
+        "surface-container-low": "#f3f3fe", "surface-container-lowest": "#ffffff",
+        "surface-dim": "#d9d9e5", "surface": "#faf8ff",
+        "primary": "#004ac6", "primary-container": "#2563eb",
+        "primary-fixed": "#dbe1ff", "on-primary": "#ffffff",
+        "on-primary-container": "#eeefff", "on-surface": "#191b23",
+        "on-surface-variant": "#434655", "outline-variant": "#c3c6d7",
+        "outline": "#737686", "background": "#faf8ff",
+        "inverse-surface": "#2e3038"
+      },
+      borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" },
+      fontFamily: { headline: ["Manrope"], body: ["Inter"], label: ["Inter"] }
+    }
+  }
+}
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+body { font-family: 'Inter', sans-serif; }
+h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+</style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed">
 
-    <main class="detail-page">
-      <section class="card detail-header">
-        <p class="detail-tag">📖 Case Study</p>
-        <h1>Building BoulderingAI: An End-to-End Climbing Video Analytics Pipeline</h1>
-        <p class="resume-meta">How AI-powered pose estimation and computer vision transformed climbing coaching</p>
-        <p class="resume-meta" style="font-size: 0.9em; color: #888;">Machine Learning & AI Intern | May 2025 - Aug 2025 | College Station, TX</p>
-        <a class="btn btn-secondary" href="index.html#experience">← Back to Experience</a>
-      </section>
+<header class="sticky top-0 z-50 bg-[#faf8ff]/70 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,74,198,0.05)]">
+  <nav class="flex justify-between items-center max-w-[900px] mx-auto px-6 h-16 font-headline antialiased tracking-tight">
+    <a class="text-lg font-extrabold tracking-tighter text-on-surface" href="index.html">Jun Du</a>
+    <div class="flex items-center gap-8">
+      <a class="text-[#5e606e] hover:text-primary transition-colors" href="index.html">Home</a>
+      <a class="text-[#5e606e] hover:text-primary transition-colors" href="resume.html">Resume</a>
+      <a class="text-[#5e606e] hover:text-primary transition-colors" href="experience-hrc-detail.html">Research</a>
+      <a class="text-primary font-bold border-b-2 border-primary pb-1" href="experience-crux-detail.html">Internship</a>
+    </div>
+  </nav>
+</header>
 
-      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='400'%3E%3Crect fill='%23111827' width='700' height='400'/%3E%3Ctext x='50' y='200' font-size='20' fill='%230ea5e9' font-family='Arial'%3EBoulderingAI Platform Demo%3C/text%3E%3Ctext x='50' y='240' font-size='14' fill='%23888'%3EClimbing video analysis dashboard with real-time metrics%3C/text%3E%3Crect x='50' y='260' width='600' height='100' fill='%23222' stroke='%23444' stroke-width='2'/%3E%3Ctext x='70' y='285' font-size='12' fill='%2310b981'%3E✓ Static Stability: 87%  ✓ Movement Fluidity: 92%  ✓ Balance: 81%%3C/text%3E%3Ctext x='70' y='310' font-size='12' fill='%2310b981'%3E✓ Extension Quality: 95%  ✓ Move Efficiency: 88%  ✓ Duration: 4.2s avg%3C/text%3E%3C/svg%3E" alt="BoulderingAI Dashboard Demo" class="detail-image"/>
-      <p class="image-caption">Interactive dashboard showing real-time climbing performance metrics streamed live during video analysis</p>
+<main class="max-w-[900px] mx-auto px-6 pt-12 pb-24">
 
-      <section class="card detail-section">
-        <h2>🎯 The Problem</h2>
-        <p>
-          Climbing coaches have always faced a fundamental challenge: <span class="highlight">how to provide actionable, data-driven feedback to athletes in real-time</span>. Traditional methods rely on coaches' visual inspection—fast but inconsistent and prone to human bias. 
-        </p>
-        <p>
-          What if coaches could have an AI assistant that could:
-        </p>
-        <ul>
-          <li>Analyze <strong>every frame</strong> of a climbing session automatically</li>
-          <li>Track body positioning and movement patterns with precision</li>
-          <li>Measure movement efficiency quantitatively</li>
-          <li>Generate structured coaching reports in seconds, not hours</li>
+  <a class="inline-flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors mb-8" href="index.html">
+    <span class="material-symbols-outlined text-base">arrow_back</span>Back to portfolio
+  </a>
+
+  <div class="mb-3">
+    <span class="text-xs font-bold tracking-widest uppercase text-primary bg-primary-fixed px-3 py-1 rounded-md">Internship</span>
+  </div>
+  <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface mb-4">Machine Learning and AI Intern</h1>
+  <div class="flex flex-wrap gap-6 text-on-surface-variant text-sm mb-12">
+    <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">business</span>Crux AI</span>
+    <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">calendar_month</span>May 2025 – Aug 2025</span>
+    <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">location_on</span>College Station, TX</span>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+    <div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-4">The Challenge</h2>
+      <p class="text-on-surface leading-relaxed mb-4">Bouldering coaches lacked an objective, automated way to analyze athlete movement. Video review was done manually, inconsistently, and without structured data. Crux AI needed a vision pipeline that could turn raw climbing footage into coaching-ready insights at scale.</p>
+      <p class="text-on-surface-variant leading-relaxed text-sm">This internship focused on building that pipeline end-to-end — from data labeling and model training to structured output generation and LLM-assisted movement reports.</p>
+    </div>
+    <div class="bg-primary-container p-8 rounded-xl flex flex-col items-center justify-center text-center text-on-primary-container">
+      <span class="text-5xl font-extrabold tracking-tighter mb-2">99%</span>
+      <span class="text-sm font-bold uppercase tracking-widest mb-1">Model Accuracy</span>
+      <span class="text-on-primary-container/70 text-xs">Hold detection mAP@0.5</span>
+    </div>
+  </div>
+
+  <section class="mb-16">
+    <div class="flex items-center gap-4 mb-8">
+      <div class="flex-1 h-px bg-outline-variant"></div>
+      <h2 class="text-2xl font-bold whitespace-nowrap">End-to-End Vision Pipeline</h2>
+      <div class="flex-1 h-px bg-outline-variant"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-8">
+      <div>
+        <p class="text-on-surface-variant leading-relaxed mb-6">I designed an end-to-end system combining two YOLOv11 models: hold detection (jugs, crimps, slopers, pockets, volumes) and athlete pose estimation. The pipeline syncs hold detections with pose keypoints to map how an athlete moves across the wall over time.</p>
+        <ul class="space-y-4">
+          <li class="flex gap-3 items-start">
+            <span class="material-symbols-outlined text-primary flex-shrink-0 mt-0.5">check_circle</span>
+            <div>
+              <span class="font-semibold">Precision Labeling</span>
+              <p class="text-on-surface-variant text-sm mt-0.5">Curated and labeled bouldering footage in Roboflow covering 5 hold classes, with bounding-box annotations, edge cases, and augmentation strategies.</p>
+            </div>
+          </li>
+          <li class="flex gap-3 items-start">
+            <span class="material-symbols-outlined text-primary flex-shrink-0 mt-0.5">check_circle</span>
+            <div>
+              <span class="font-semibold">Pose Synchronization</span>
+              <p class="text-on-surface-variant text-sm mt-0.5">Frame-level sync of 17-keypoint pose skeleton with hold detections, enabling grip-to-joint distance analytics and movement path visualization.</p>
+            </div>
+          </li>
         </ul>
-        <p>
-          That was the vision behind <strong>BoulderingAI</strong>—a premium video analysis platform built to transform climbing coaching through computer vision and deep learning.
-        </p>
-      </section>
+      </div>
+      <div class="rounded-xl overflow-hidden bg-surface-container-high">
+        <img src="images/onboarding.png" alt="Crux AI onboarding interface screenshot" class="w-full object-cover" loading="lazy"/>
+      </div>
+    </div>
+  </section>
 
-      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='350'%3E%3Crect fill='%23111827' width='700' height='350'/%3E%3Ctext x='50' y='40' font-size='18' fill='%230ea5e9' font-family='Arial' font-weight='bold'%3EYOLOv11 Hold Detection On Boulder Problem%3C/text%3E%3Crect x='50' y='60' width='600' height='250' fill='%23202020' stroke='%23444' stroke-width='2'/%3E%3Crect x='80' y='100' width='80' height='60' fill='none' stroke='%2310b981' stroke-width='2'/%3E%3Ctext x='95' y='140' font-size='11' fill='%2310b981'%3ECrimp%3C/text%3E%3Crect x='200' y='120' width='70' height='80' fill='none' stroke='%2310b981' stroke-width='2'/%3E%3Ctext x='210' y='168' font-size='11' fill='%2310b981'%3EJug%3C/text%3E%3Crect x='330' y='90' width='100' height='100' fill='none' stroke='%2310b981' stroke-width='2'/%3E%3Ctext x='365' y='145' font-size='11' fill='%2310b981'%3ESloper%3C/text%3E%3Crect x='490' y='110' width='90' height='70' fill='none' stroke='%2310b981' stroke-width='2'/%3E%3Ctext x='510' y='150' font-size='11' fill='%2310b981'%3EPocket%3C/text%3E%3Ctext x='70' y='330' font-size='12' fill='%23aaa'%3EDetection accuracy: 95.2% | FPS: 30 | Model: YOLOv11-nano%3C/text%3E%3C/svg%3E" alt="YOLO Hold Detection" class="detail-image"/>
-      <p class="image-caption">YOLOv11 detects climbing holds (crimps, jugs, slopers, pockets) with 95%+ accuracy across diverse boulder problems and lighting conditions</p>
-The Solution: A Complete AI Pipeline</h2>
-        <p>
-          I engineered a full-stack climbing analytics platform combining computer vision, pose estimation, FastAPI backend, and modern UI—all designed to deliver actionable insights from raw climbing videos.
-        </p>
-      </section>
+  <section class="mb-16 bg-surface-container-low rounded-2xl p-10">
+    <h2 class="text-2xl font-bold mb-8">Technical Implementation</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-surface-container-lowest p-6 rounded-xl">
+        <span class="material-symbols-outlined text-primary text-3xl mb-4 block">slow_motion_video</span>
+        <h3 class="font-bold text-lg mb-3">Automated Video Processing</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Raw climbing video is ingested and processed frame-by-frame using OpenCV. Hold detection and pose estimation run in parallel, then aggregate into per-rep structured JSON including hold sequence, movement distance, joint trajectories, and timing statistics.</p>
+      </div>
+      <div class="bg-surface-container-lowest p-6 rounded-xl">
+        <span class="material-symbols-outlined text-primary text-3xl mb-4 block">psychology</span>
+        <h3 class="font-bold text-lg mb-3">LLM-Assisted Analysis</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Structured metrics feed a LangChain-powered pipeline that generates natural-language coaching notes. Movement pattern summaries, efficiency scores, and hold transition analyses are wrapped into Excel-based athlete reports for coaches.</p>
+      </div>
+    </div>
+  </section>
 
-      <section class="card detail-section">
-        <h3 style="margin-bottom: 1em;">1. Data Preparation & Labeling</h3>
-        <p>
-          The foundation of any ML model ">
-        <h2>Technical Architecture</h2>
-        <p>
-          The platform is built on a modern full-stack foundation:
-        </p>
-        <ul style="margin-left: 1.5em;">
-          <li><strong>Backend</strong> — FastAPI for async job processing and REST API</li>
-          <li><strong>Frontend</strong> — Dark theme UI with real-time sparkline charts, frame previews, and confetti animations</li>
-          <li><strong>Processing</strong> — OpenCV for video frame extraction, NumPy for feature computation</li>
-          <li><strong>Data Persistence</strong> — Structured JSON storage for metrics, reports, and session history</li>
-          <li><strong>DevOps</strong> — Docker containerization and auto-commit versioning for reproducibility</li>
+  <section class="mb-16">
+    <h2 class="text-2xl font-bold mb-6">Impact Snapshot</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm">
+        <p class="text-3xl font-extrabold tracking-tighter text-primary">99%</p>
+        <p class="text-xs uppercase tracking-widest font-bold text-on-surface-variant mt-1">Detection Accuracy</p>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm">
+        <p class="text-3xl font-extrabold tracking-tighter text-primary">5</p>
+        <p class="text-xs uppercase tracking-widest font-bold text-on-surface-variant mt-1">Hold Classes</p>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm">
+        <p class="text-3xl font-extrabold tracking-tighter text-primary">17</p>
+        <p class="text-xs uppercase tracking-widest font-bold text-on-surface-variant mt-1">Pose Keypoints</p>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm">
+        <p class="text-3xl font-extrabold tracking-tighter text-primary">14ms</p>
+        <p class="text-xs uppercase tracking-widest font-bold text-on-surface-variant mt-1">Inference Latency</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-16 bg-surface-container-low rounded-2xl p-10">
+    <h2 class="text-2xl font-bold mb-6">Ownership and Delivery</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-surface-container-lowest p-6 rounded-xl">
+        <h3 class="font-bold text-lg mb-3">What I Owned</h3>
+        <ul class="space-y-3 text-sm text-on-surface-variant leading-relaxed">
+          <li class="flex gap-3"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Data curation and labeling strategy for robust hold classes.</li>
+          <li class="flex gap-3"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Model training, evaluation, and experiment iteration loop.</li>
+          <li class="flex gap-3"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Post-processing pipeline for frame-level metrics and structured outputs.</li>
         </ul>
-      </section>
-
-      <section class="card detail-section">
-        <h2>Key Accomplishments</h2>
-        <ul>
-          <li>🎯 <strong>High Accuracy Models</strong> — Achieved 95%+ precision on hold detection and keypoint localization across varied climbing angles and lighting conditions</li>
-          <li>📊 <strong>6 Real-Time Metrics</strong> — Built and animated 6 concurrent sparkline charts tracking performance across static stability, movement fluidity, and balance</li>
-          <li>⚡ <strong>30fps Throughput</strong> — Optimized pipeline processes full climbing sessions at video framerate with minimal latency</li>
-          <li>🎨 <strong>Premium UX</strong> — Developed interactive dashboard with frame previews, confetti celebrations, toast notifications, and downloadable reports</li>
-          <li>🔄 <strong>Automated DevOps</strong> — Implemented auto-commit system for tracking all development changes and ensuring reproducibility</li>
+      </div>
+      <div class="bg-surface-container-lowest p-6 rounded-xl">
+        <h3 class="font-bold text-lg mb-3">What I Delivered</h3>
+        <ul class="space-y-3 text-sm text-on-surface-variant leading-relaxed">
+          <li class="flex gap-3"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Reusable pipeline that converts raw climbing videos into coaching-ready insights.</li>
+          <li class="flex gap-3"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Annotated and raw media outputs for model validation and coach review.</li>
+          <li class="flex gap-3"><span class="material-symbols-outlined text-primary text-base">check_circle</span>LLM-assisted report generation integrated with Excel-based workflows.</li>
         </ul>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section class="card detail-section">
-        <h2>Key Learnings</h2>
-        <p>
-          Working on BoulderingAI taught me several critical lessons:
-        </p>
-        <ul style="margin-left: 1.5em;">
-          <li><strong>Data Quality > Model Complexity</strong> — Spending extra time on careful labeling in Roboflow paid massive dividends, reducing model errors far more than hyperparameter tuning</li>
-          <li><strong>Domain Knowledge Matters</strong> — Understanding climbing biomechanics helped me identify which metrics actually matter to coaches vs. purely technical measures</li>
-          <li><strong>Deployment is Half the Work</strong> — Building models is 20%; the real challenge is creating a reliable, fast pipeline that coaches can use daily</li>
-          <li><strong>Real-time Feedback is Hard</strong> — Balancing model accuracy with inference speed required creative optimization and careful feature selection</li>
-          <li><strong>Users Know What They Want</strong> — Iterating with actual climbers and coaches revealed that dashboards matter as much as algorithms</li>
-        </ul>
-      </section>
+  <section class="mb-16">
+    <h2 class="text-2xl font-bold mb-6">Tech Stack</h2>
+    <div class="flex flex-wrap gap-3">
+      <span class="px-4 py-2 bg-surface-container rounded-md font-semibold text-sm">PyTorch</span>
+      <span class="px-4 py-2 bg-surface-container rounded-md font-semibold text-sm">Ultralytics YOLO</span>
+      <span class="px-4 py-2 bg-surface-container rounded-md font-semibold text-sm">Roboflow</span>
+      <span class="px-4 py-2 bg-surface-container rounded-md font-semibold text-sm">OpenCV</span>
+      <span class="px-4 py-2 bg-surface-container rounded-md font-semibold text-sm">LangChain</span>
+      <span class="px-4 py-2 bg-surface-container rounded-md font-semibold text-sm">Python</span>
+    </div>
+  </section>
 
-      <section class="card detail-section">
-        <h2>Impact & Future Vision</h2>
-        <p>
-          BoulderingAI demonstrates how computer vision and deep learning can democratize access to elite coaching insights. Rather than relying on expensive one-on-one coaching, climbers can now get instant, data-driven feedback after every session.
-        </p>
-        <p>
-          The vision extends further: imagine training individualized models that adapt to each climber's style, predicting injury risk, or coaching multiple climbers in real-time at competitions. The foundation is built—the possibilities are limitleshoulders, elbows, wrists, hips, knees, ankles)</li>
-          <li><strong>Movement phases</strong> — approach, reach, grasp, pull, transition, dismount</li>
-        </ul>
-        <p>
-          This labeled dataset became the training foundation for all downstream models.
-        </p>
-      </section>
+  <section class="mb-16">
+    <div class="bg-surface-dim p-8 rounded-xl border-l-4 border-primary">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="material-symbols-outlined text-primary">terminal</span>
+        <h2 class="text-xl font-bold">Model Card</h2>
+      </div>
+      <pre class="font-mono text-xs text-on-primary leading-relaxed overflow-x-auto bg-inverse-surface p-6 rounded-xl"><code>{
+  "project": "Crux-Bouldering-v1",
+  "base_architecture": "YOLOv11-Nano",
+  "input_resolution": [640, 640],
+  "mAP@.5": 0.992,
+  "inference_latency": "14ms (RTX 4090)",
+  "classes": ["jug", "crimp", "sloper", "pocket", "volume"],
+  "augmentation": ["mosaic", "mixup", "hsv_jitter"]
+}</code></pre>
+    </div>
+  </section>
 
-      <section class="card detail-section">
-        <h3 style="margin-bottom: 1em;">2. Model Training: YOLO + Pose Estimation</h3>
-        <p>
-          I fine-tuned two models working in tandem:
-        </p>
-        <ul style="margin-left: 1.5em;">
-          <li><strong>YOLOv11 (Object Detection)</strong> — Detects climbing holds with bounding boxes, achieving high precision on varied boulder problems across angles and lighting</li>
-          <li><strong>Pose Estimation</strong> — Tracks 17 keypoints per frame to extract body positioning, reach, and balance patterns</li>
-        </ul>
-        <p>
-          Both models run on every frame, enabling frame-level analysis at 30fps video throughput.
-        </p>
-      </section>
+  <section class="mb-16">
+    <h2 class="text-2xl font-bold mb-6">Project Assets</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <a class="flex items-center gap-4 p-5 bg-surface-container-lowest rounded-xl hover:bg-surface-container transition-colors group" href="annotatedVideo.mp4" target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-primary text-2xl group-hover:scale-110 transition-transform">play_circle</span>
+        <div>
+          <div class="font-semibold text-sm">Annotated Video</div>
+          <div class="text-xs text-on-surface-variant">Hold detection + pose overlay (MP4)</div>
+        </div>
+      </a>
+      <a class="flex items-center gap-4 p-5 bg-surface-container-lowest rounded-xl hover:bg-surface-container transition-colors group" href="originalVideo.mp4" target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-on-surface-variant text-2xl group-hover:scale-110 transition-transform">videocam</span>
+        <div>
+          <div class="font-semibold text-sm">Original Video</div>
+          <div class="text-xs text-on-surface-variant">Raw climbing footage (MP4)</div>
+        </div>
+      </a>
+      <a class="flex items-center gap-4 p-5 bg-surface-container-lowest rounded-xl hover:bg-surface-container transition-colors group" href="images/Frontpage.png" target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-on-surface-variant text-2xl group-hover:scale-110 transition-transform">image</span>
+        <div>
+          <div class="font-semibold text-sm">App Frontpage</div>
+          <div class="text-xs text-on-surface-variant">Interface screenshot (PNG)</div>
+        </div>
+      </a>
+      <a class="flex items-center gap-4 p-5 bg-surface-container-lowest rounded-xl hover:bg-surface-container transition-colors group" href="images/readliness.png" target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-on-surface-variant text-2xl group-hover:scale-110 transition-transform">image</span>
+        <div>
+          <div class="font-semibold text-sm">Readiness View</div>
+          <div class="text-xs text-on-surface-variant">Athlete readiness dashboard (PNG)</div>
+        </div>
+      </a>
+    </div>
+  </section>
 
-      <section class="card detail-section">
-        <h3 style="margin-bottom: 1em;">3. Movement Metrics & Post-Processing</h3>
-        <p>
-          Raw detection outputs become meaningful insights through automated feature engineering:
-        </p>
-        <ul style="margin-left: 1.5em;">
-          <li><strong>Static Stability</strong> — Measures posture consistency across frames (shoulder/hip alignment variance)</li>
-          <li><strong>Dynamic Movement</strong> — Tracks transition efficiency and fluidity between holds</li>
-          <li><strong>Balance & Weight Distribution</strong> — Computes center-of-mass shifts relative to hold positions</li>
-          <li><strong>Extension Quality</strong> — Measures reach patterns and positioning relative to target holds</li>
-          <li><strong>Move Efficiency</strong> — Quantifies smoothness vs. jerky movements (velocity/acceleration analysis)</li>
-          <li><strong>Duration Distribution</strong> — Tracks time spent on each hold and segment</li>
-        </ul>
-      </section>
+  <div class="flex justify-between items-center pt-8 border-t border-outline-variant/40">
+    <a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="index.html">
+      <span class="material-symbols-outlined">arrow_back</span>
+      <span class="font-medium text-sm">Back to Home</span>
+    </a>
+    <a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="experience-hrc-detail.html">
+      <span class="font-medium text-sm">Research at HRC</span>
+      <span class="material-symbols-outlined">arrow_forward</span>
+    </a>
+  </div>
 
-      <section class="card detail-section">
-        <h3 style="margin-bottom: 1em;">4. Structured Reporting & AI Insights</h3>
-        <p>
-          All metrics feed into a reporting pipeline that generates:
-        </p>
-        <ul style="margin-left: 1.5em;">
-          <li><strong>JSON Reports</strong> — Machine-readable metrics for trend tracking and app integration</li>
-          <li><strong>Markdown Summaries</strong> — Human-readable coaching insights with timestamped feedback</li>
-          <li><strong>Annotated Videos</strong> — Frame-by-frame visualizations with pose overlays and hold detection</li>
-          <li><strong>Coaching Recommendations</strong> — AI-generated performance tips personalized to session datai>
-          <li>Automated post-processing for movement metrics and trend tracking.</li>
-          <li>Produced structured outputs for reporting and AI-assisted performance review.</li>
-        </ul>
-      </section>
+</main>
 
-      <section class="card detail-section detail-placeholder">
-        <h2>Add More Details</h2>
-        <p>
-          Add your detailed notes here, such as pipeline architecture, performance benchmarks,
-          failure cases, and examples of how reports improved coaching decisions.
-        </p>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p><span id="year"></span> Jun Du (Justin Du)</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+<footer class="w-full bg-[#f3f3fe]">
+  <div class="max-w-[900px] mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-4 font-body text-sm">
+    <div class="text-on-surface-variant">&#169; <span id="year"></span> Jun Du. Built for the Digital Laboratory.</div>
+    <div class="flex gap-6">
+      <a class="text-on-surface-variant hover:text-primary transition-all" href="https://github.com/Carkappa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="text-on-surface-variant hover:text-primary transition-all" href="https://www.linkedin.com/in/justin-du-79076121b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+<script>const y=document.querySelector('#year');if(y)y.textContent=new Date().getFullYear();</script>
+</body>
 </html>
